@@ -1,0 +1,78 @@
+
+/* Strat Variable */
+:root{
+    --main-color:#1955fa;
+    --sub-color:#19c8fa;
+    --dark-color:#0d1831;
+    --light-color:#274664;
+    --transparent-color: rgba(45, 37, 146, 0.7);
+    --un-transparent-color: rgba(24, 15, 143);
+    /* --transparent-color: rgb(15 116 143 / 70%); */
+    --section-padding:100px;
+    }
+    /* Strat Global Rules  */
+    *{
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+   body{
+    background-color:var(--light-color);
+   }
+    /* body{
+        font-family: Arial, Helvetica, sans-serif; } */
+    .conainer-change-color{
+        padding:10px;
+        background-color: var(--main-color);
+        width: 100px;
+        margin:10px 40px;
+        border-radius: 5px;
+         /* display: flex;
+         justify-content: space-evenly; */
+    }
+fieldset{
+    background:var(--transparent-color);
+    border:1px solid #CCC;
+    padding:10px;
+    width: 500px;
+    margin:0 auto 0;
+    
+}
+legend{
+    background: #FFF;
+    border: 1px solid #CCC;
+    padding: 10px;
+}
+label{display: block;}
+label{margin-bottom: 10px;}
+input{margin-bottom: 10px;}
+input[type="text"],input[type="password"],input[type="email"],textarea{
+    padding:8px;
+    width: 300px;
+    display:block;
+}
+button{
+    margin: 5px 248px;
+    background-color:var(--sub-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+#selectColor{
+    border-radius: 8px;
+}
+form-control.erre input{
+    border-color: #2ecc71;
+    }
+form-control.error input{
+    border-color: #e74c3c;
+    }
+/* form button{
+    background-color:#8e44ad;
+    border: 2px solid #8344ad;
+    color:#fff;
+    display:block;
+    width:100%;
+    } */
