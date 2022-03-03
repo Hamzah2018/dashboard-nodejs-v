@@ -2,36 +2,37 @@ const { save } = require('debug/src/node');
 var express = require('express');
 var router = express.Router();
 // const skillView = require("../views/dashboard/skills.ejs");
-const skillModel = require("../models/skill_models");
+// const skillModel = require("../models/skill_models");
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   res.render('../views/dashboard/skills.ejs');
 });
+//insertSkill
 
-router.post('/insert',(req,res,next)=>{
-  const skillSS = new skillModel({
-    //kkkkkk
-    skills_name: req.body.skillName,
-    // progress_percent: { type: Number, required: true },
-    skill_descrip:req.body.decripText,
-    is_active:req.body.Active ,
-    // addedAt: 
-
-//,,,,,,,
-  })
-  skillModel.save((resualt,error)=>{
-    if(error){
-        // console.log(error);
-        console.log("try agian");
-        return;}
-        console.log(resualt);
-    }
+// router.post('/skill/add', async (req,res,next)=> {
+//   const skillSS = await new skillModel.insertSkill({
+//     //kkkkkk
+//     skills_name: req.body.skillName,
+//     // progress_percent: { type: Number, required: true },
+//     skill_descrip:req.body.decripText,
+//     //is_active:req.body.Active ,
+//     // addedAt: 
+// //,,,,,,,
+//   })
+//   skillSS.save((resualt,error)=>{
+//     if(error){
+//         // console.log(error);
+//         console.log("try agian");
+//         return;}
+//         console.log(resualt);
+//     }
   
-  );
-  // console.log(req.body.username);
-}
-)
+//   );
+//   // console.log(req.body.username);
+//   res.redirect('/skills');
+// }
+// )
 
 module.exports = router;
 
