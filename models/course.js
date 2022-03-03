@@ -1,11 +1,11 @@
 const mongoose = require('./index');
 
-const skillsSchema = new mongoose.Schema({
+const courseSchema = new mongoose.Schema({
   skills_name: { type: String, required: true },
   // progress_percent: { type: Number, required: true },
   skill_descrip:{type:String, required:true},
   is_active: { type: Number, default: 1 },
-  // addedAt: { type: Date, default: Date.now },
+  addedAt: { type: Date, default: Date.now },
 });
 
 const Skills = mongoose.model('Skills', skillsSchema);
